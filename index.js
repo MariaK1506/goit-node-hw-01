@@ -62,4 +62,8 @@ async function invokeAction({ action, id, name, email, phone }) {
 // const removeId = '55b60640-3b88-4cec-a350-347dca4dc49a';
 // invokeAction({ action: 'remove', id: removeId });
 
-invokeAction(options);
+// invokeAction(options);
+
+(async () => {
+  await invokeAction(options);
+})();
